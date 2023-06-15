@@ -8,85 +8,174 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="main-container">
-    <div class="container">
-        <div class="p">
-            <div class="boxp" id="cop1"><span><img src="./clock_logo.png" alt=""></span></div>
-            <div class="boxp" id="cop2">
-                <label class="ddlabel">Set Wake Up Time</label>
-                <select class="dd">
-                    <option>8AM-9AM</option>
-                    <option>9AM-10AM</option>
-                    <option>10AM-11AM</option>
-                    <option>11AM-12PM</option>
-                </select>
-                <br>
-                <label class="ddlabel">Set Lunch Time</label>
-                <select class="dd">
-                    <option>8AM-9AM</option>
-                    <option>9AM-10AM</option>
-                    <option>10AM-11AM</option>
-                    <option>11AM-12PM</option>
-                </select>
-                <br>
-                <label class="ddlabel">Set Snap Time</label>
-                <select class="dd">
-                    <option>8AM-9AM</option>
-                    <option>9AM-10AM</option>
-                    <option>10AM-11AM</option>
-                    <option>11AM-12PM</option>
-                </select>
-                <br>
-                <label class="ddlabel">Set Night Time</label>
-                <select class="dd">
-                    <option>8AM-9AM</option>
-                    <option>9AM-10AM</option>
-                    <option>10AM-11AM</option>
-                    <option>11AM-12PM</option>
-                </select>
-            </div>
-            <div class="boxp" id="cop3">Good Morning!! WakeUp!!</div>
-            <div class="boxp" id="cop4">Set Alarm</div>
-            <div class="boxp" id="cop5">Wakeup time 10AM:11AM</div>
-        </div>
+    <!--main container-->
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="parent1">
+                <!--clock logo-->
+                <div id="clocklogo"><span><img src="./clock_logo.png" alt=""></span></div>
+                <!--Dropdown-Container-->
+                <div id="dd-container">
+                    <!--dd1-->
+                    <label class="ddlabel"><img src="./wakeup.svg" alt=""><span class="dd-txt">Set Wake Up
+                            Time</span></label>
+                    <select class="dd" id="getmorning">
+                        <option value="default">default</option>
+                        <option value="0">00AM-01AM</option>
+                        <option value="1">01AM-02AM</option>
+                        <option value="2">02AM-03AM</option>
+                        <option value="3">03AM-04AM</option>
+                        <option value="4">04AM-05AM</option>
+                        <option value="5">05AM-06AM</option>
+                        <option value="6" selected>06AM-07AM</option>
+                        <option value="7">07AM-08AM</option>
+                        <option value="8">08AM-09AM</option>
+                        <option value="9">09AM-10AM</option>
+                        <option value="10">10AM-11AM</option>
+                        <option value="11">11AM-12PM</option>
+                        <option value="12">12PM-1PM</option>
+                        <option value="13">01PM-02PA</option>
+                        <option value="14">02PM-03PM</option>
+                        <option value="15">03PM-04PM</option>
+                        <option value="16">04PM-05PM</option>
+                        <option value="17">05PM-06PM</option>
+                        <option value="18">06PM-07PM</option>
+                        <option value="19">07PM-08PM</option>
+                        <option value="20">08PM-09PM</option>
+                        <option value="21">09PM-10PM</option>
+                        <option value="22">10PM-11PM</option>
+                        <option value="23">11PM-12PM</option>
+                        <option value="24">12PM-00</option>
+                    </select>
+                    <br>
+                    <!--dd2-->
+                    <label class="ddlabel"><img src="./lunch_time.svg" alt="">Set Lunch Time</label>
+                    <select class="dd" id="getafternoon">
+                        <option value="0">00AM-01AM</option>
+                        <option value="1">01AM-02AM</option>
+                        <option value="2">02AM-03AM</option>
+                        <option value="3">03AM-04AM</option>
+                        <option value="4">04AM-05AM</option>
+                        <option value="5">05AM-06AM</option>
+                        <option value="6">06AM-07AM</option>
+                        <option value="7">07AM-08AM</option>
+                        <option value="8">08AM-09AM</option>
+                        <option value="9">09AM-10AM</option>
+                        <option value="10">10AM-11AM</option>
+                        <option value="11">11AM-12PM</option>
+                        <option value="12">12PM-1PM</option>
+                        <option value="13">01PM-02PM</option>
+                        <option value="14">02PM-03PM</option>
+                        <option value="15">03PM-04PM</option>
+                        <option value="16">04PM-05PM</option>
+                        <option value="17">05PM-06PM</option>
+                        <option value="18">06PM-07PM</option>
+                        <option value="19">07PM-08PM</option>
+                        <option value="20">08PM-09PM</option>
+                        <option value="21">09PM-10PM</option>
+                        <option value="22">10PM-11PM</option>
+                        <option value="23">11PM-12PM</option>
+                        <option value="24">12PM-00</option>
+                    </select>
+                    <br>
+                    <!--dd3-->
+                    <label class="ddlabel"><img src="./nap_time.svg" alt="">Set Snap Time</label>
+                    <select class="dd" id="getevening">
+                        <option value="0">00AM-01AM</option>
+                        <option value="1">01AM-02AM</option>
+                        <option value="2">02AM-03AM</option>
+                        <option value="3">03AM-04AM</option>
+                        <option value="4">04AM-05AM</option>
+                        <option value="5">05AM-06AM</option>
+                        <option value="6">06AM-07AM</option>
+                        <option value="7">07AM-08AM</option>
+                        <option value="8">08AM-09AM</option>
+                        <option value="9">09AM-10AM</option>
+                        <option value="10">10AM-11AM</option>
+                        <option value="11">11AM-12PM</option>
+                        <option value="12">12PM-1PM</option>
+                        <option value="13">01PM-02PA</option>
+                        <option value="14">02PM-03PM</option>
+                        <option value="15">03PM-04PM</option>
+                        <option value="16" selected>04PM-05PM</option>
+                        <option value="17">05PM-06PM</option>
+                        <option value="18">06PM-07PM</option>
+                        <option value="19">07PM-08PM</option>
+                        <option value="20">08PM-09PM</option>
+                        <option value="21">09PM-10PM</option>
+                        <option value="22">10PM-11PM</option>
+                        <option value="23">11PM-12PM</option>
+                        <option value="24">12PM-00</option>
 
+                    </select>
+                    <br>
+                    <!--dd4-->
+                    <label class="ddlabel"><img id="sleep-moon" src="./rest-night-sleep.svg" alt="" width="40px"
+                            height="40px">Set Night Time</label>
+                    <select class="dd" id="getnight">
+                        <option value="0">00AM-01AM</option>
+                        <option value="1">01AM-02AM</option>
+                        <option value="2">02AM-03AM</option>
+                        <option value="3">03AM-04AM</option>
+                        <option value="4">04AM-05AM</option>
+                        <option value="5">05AM-06AM</option>
+                        <option value="6">06AM-07AM</option>
+                        <option value="7">07AM-08AM</option>
+                        <option value="8">08AM-09AM</option>
+                        <option value="9">09AM-10AM</option>
+                        <option value="10">10AM-11AM</option>
+                        <option value="11">11AM-12PM</option>
+                        <option value="12">12PM-1PM</option>
+                        <option value="13">01PM-02PA</option>
+                        <option value="14">02PM-03PM</option>
+                        <option value="15">03PM-04PM</option>
+                        <option value="16">04PM-05PM</option>
+                        <option value="17">05PM-06PM</option>
+                        <option value="18">06PM-07PM</option>
+                        <option value="19">07PM-08PM</option>
+                        <option value="20">08PM-09PM</option>
+                        <option value="21" selected>09PM-10PM</option>
+                        <option value="22">10PM-11PM</option>
+                        <option value="23">11PM-12PM</option>
+                        <option value="24">12PM-00</option>
 
-
-        <div class="pp">
-
-            <div class="boxpp" id="copp1">
-                <div class="copp11"></div>
-                <div class="copp12"></div>
-                <div class="copp13">
-                    <div class="box" style="color:#3D087B;font-size: large;font-weight: bolder;">Time</div>
-                    <div class="box boxbg"> Hour</div>
-                    <div style="color:blue;font-size: large;font-weight: bolder;">:</div>
-                    <div class="box boxbg">00 mins</div>
-                    <div style="color:blue;font-size: large;font-weight: bolder;">:</div>
-                    <div class="box boxbg">01 seco</div>
-                    <div class="box am">AM</div>
+                    </select>
+                </div>
+                <!--dropdown-container close-->
+                <div id="wishBox">Good Morning!!!</div>
+                <!--button for set time-->
+                <button onclick="setAlarm()" id="set-btn">Set Alarm</button>
+                <div id="update-table">
+                    <span class="tperiod">Wakeup time 10AM:11AM</span><br>
+                    <span class="tperiod">Lunch time 1PM:2PM</span><br>
+                    <span class="tperiod">Napm time 3PM:4PM</span><br>
+                    <span class="tperiod">Evening time 5PM:6PM</span><br>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="boxpp" id="copp2">GRAB SOME HEALTHY BREAKFAST!!!
-
+            <!--end of parent1-->
+            <!--start of parent2-->
+            <div class="parent2">
+                <div id="watch-container">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="main-watch">
+                        <div class="box" style="color:#3D087B;font-size: large;font-weight:bolder;">Time</div>
+                        <div class="box boxbg" id="h"></div>
+                        <div style="color:blue;font-size: large;font-weight: bolder;">:</div>
+                        <div class="box boxbg" id="m"></div>
+                        <div style="color:blue;font-size: large;font-weight: bolder;">:</div>
+                        <div class="box boxbg" id="s"></div>
+                        <div class="box ampm"></div>
+                    </div>
+                </div>
+                <!--message-box-->
+                <div id="message-Box"></div>
+                <!--image-Box-->
+                <div id="image-Box"><img id="img" src="./gdmr.svg" alt="" width="400px;" height="250px"></div>
             </div>
-            <div class="boxpp" id="copp3"><img src="./Component 30 – 1.svg" alt="" width="500px;"></div>
         </div>
-    </div>
-</div>
+
+        <script src="./script.js"></script>
 </body>
+
 </html>

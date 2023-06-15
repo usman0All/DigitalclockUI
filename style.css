@@ -1,69 +1,101 @@
-
-.main-container{
-    background-color:#3D087B;
-    width: 96%;
-    height: 50%vh;
-    margin-left: 10px;
-    margin-right: 10px
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
+
+.main-container {
+    background-color: #3D087B;
+    width: 98%;
+    height: 70%vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top:5px;
+    /* border:10px solid black; */
+}
+
+.sub-container {
+    /* border:10px solid red; */
     display: flex;
     align-items: center;
-    justify-content:space-around;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.p{
-    width:500px;
-    height:500px;
+
+.parent1 {
+    width: 500px;
+    height: 500px;
     padding: 10px;
     margin: 5px;
-
-
+    /* border:2px solid green */
 }
-#cop2{
+
+#clocklogo {
+    border-radius: 2px;
+    /* border: 2px solid red; */
+}
+
+#dd-container {
     background-color: white;
-    width:500px;
+    width: 490px;
     height: 200px;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+    /* border:3px solid black; */
 }
-.dd{
-    float:right;
-    width:200px;
-    height:40px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+
+/* dd */
+.dd {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 3px;
+    float: right;
+    clear: right;
 }
-.ddlabel{
-    float:left;
-    font-family: 'Courier New', Courier, monospace;
+
+/* label for dd */
+.ddlabel {
+    font-size: medium;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    /* border: 2px solid red; */
+    float: left;
+    clear: left;
+}
+
+.ddlabe1,
+.dd-txt {
+    display: inline-block;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.ddlabe1 img {
+    width: 30px;
+    height: 30px;
+
+}
+
+#wishBox {
     font-size: large;
-    font-weight:bold;
-    width:200px;
-    height:40px;
-    margin-bottom: 10px;
+    font-weight: bold;
     text-align: center;
-    border-radius: 5px;
-}
-#cop3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    font-weight:bold;
-    text-align: center;
-    color:white;
+    color: white;
     background-color: #671ac0de;
-    height:100px;
+    height: 100px;
     padding: 5px;
-    margin: 5px;
+    margin-top: 10px;
     border-radius: 5px;
 }
-#cop4{
-    color:white;
-    float:left;
-    width:200px;
-    height:50px;
-    background-image:linear-gradient(90deg,#671ac0de,#CB52F8,#671ac0de);
+
+#set-btn {
+    color: white;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(90deg, #671ac0de, #CB52F8, #671ac0de);
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -71,89 +103,120 @@
     font-weight: bold;
     border-radius: 5px;
 }
-#cop5{
-    color:white;
-     float: right;
-    height:80px;
+
+#update-table {
+    color: white;
+    float: right;
+    height: 80px;
     background-color: #671ac0de;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
 }
-.pp{
-    width:500px;
-    height:500px;
+
+/* parent 2 */
+.parent2 {
+    width: 500px;
+    height: 500px;
     padding: 10px;
     margin: 5px;
+    /* border:5px solid yellow; */
 }
-.boxpp{
-   
-}
-#copp1{
+
+#watch-container {
     width: 490px;
-    height:100px;
+    height: 100px;
     position: relative;
+    /* border:3px solid red; */
 }
-.copp11{
-    background-color:#6f3ea7de;
+
+.box1 {
+    background-color: #6f3ea7de;
     width: 330px;
-    height:92px;
+    height: 92px;
     position: absolute;
-    left:50px; 
+    left: 50px;
     /* z-index: 1;  */
     border-radius: 10px;
-
-    
 }
-.copp12{
-    background-color:#EDEDED;
+
+.box2 {
+    background-color: #EDEDED;
     width: 400px;
-    height:80px;
+    height: 80px;
     position: absolute;
-    left:20px;
+    left: 20px;
     /* z-index: 2; */
     border-radius: 10px;
 }
-.copp13{
-    background-color:white;
+
+.main-watch {
+    background-color: white;
     width: 430px;
-    height:70px;
+    height: 70px;
     position: absolute;
     /* z-index: 3; */
-    border-radius:5px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
-.box{
+
+.box {
     width: 50px;
     height: 50px;
     text-align: center;
     /* position:relative; */
 }
-.boxbg{
+
+.boxbg {
     background-image: url(./timeline.svg);
-    color:#8A11BF;
+    color: #8A11BF;
     font-size: larger;
     font-weight: bolder;
 }
-.am{
+
+.ampm {
     background-image: url(./AM_svg.svg);
     padding-top: 5px;
     font-size: larger;
     font-weight: bolder;
 
 }
-#copp2{
+
+#message-Box {
     color: #8A11BF;
-    color:#8A11BF;
+    color: #8A11BF;
     background-color: white;
     font-size: large;
     font-weight: bolder;
     text-align: center;
     border-radius: 5px;
     margin: 5px;
-    width:490px;
-    height:50px;
+    width: 450px;
+    height: 50px;
+}
+
+#image-Box {
+    color: #8A11BF;
+    color: #8A11BF;
+    background-color: white;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    width: 450px;
+    height: 300px;
+}
+
+#image-Box,
+#img {
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+#sleep-moon {
+    color: #3D087B;
 }
