@@ -7,7 +7,7 @@ body {
 .main-container {
     background-color: #3D087B;
     width: 98%;
-    height: 70%vh;
+    height: 89vh;
     margin-left: 15px;
     margin-right: 15px;
     margin-top:5px;
@@ -80,7 +80,7 @@ body {
 
 #wishBox {
     font-size: large;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     color: white;
     background-color: #671ac0de;
@@ -88,6 +88,7 @@ body {
     padding: 5px;
     margin-top: 10px;
     border-radius: 5px;
+    padding-top:16px;
 }
 
 #set-btn {
@@ -196,6 +197,7 @@ body {
     margin: 5px;
     width: 450px;
     height: 50px;
+    padding-top:20px;
 }
 
 #image-Box {
@@ -220,3 +222,12 @@ body {
 #sleep-moon {
     color: #3D087B;
 }
+/* media */
+
+@media screen and (min-width:240px) and (max-width:600px) {
+    .main-container{
+        flex-direction:column; 
+        height: 70%;
+        width: 100%;
+    }
+ } 

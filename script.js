@@ -24,11 +24,11 @@ function showTime() {
     }
     //console.log(hrs,mins,secs,AMPM);
     let h = document.getElementById('h');
-    h.innerHTML = hrs;
+    h.innerHTML = hrs+'<br><span>Hour</span>';
     let m = document.getElementById('m');
-    m.innerHTML = mins;
+    m.innerHTML = mins+'<br><span>Min</span>';
     let s = document.getElementById('s');
-    s.innerHTML = secs;
+    s.innerHTML = secs+'<br><span>Sec</span>';
     let ampm = document.getElementsByClassName('ampm');
     ampm[0].innerHTML = AMPM;
 }
